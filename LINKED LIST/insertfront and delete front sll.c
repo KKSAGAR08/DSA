@@ -17,7 +17,7 @@ node insertfront(node first,int ele)
         return temp;
     }
     temp->link=first;
-    return first;
+    return temp;
 }
 void display(node first)
 {
@@ -39,7 +39,7 @@ main()
     node first=NULL;
     for(;;)
     {
-        printf("Enter 1-insert\n2-display\n");
+        printf("Enter 1-insert\t2-display\n");
         int choice,ele;
         scanf("%d",&choice);
         switch (choice)
